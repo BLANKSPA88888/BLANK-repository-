@@ -1,0 +1,36 @@
+
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#panel{
+    background-color: antiquewhite;
+    width: 40em;
+    height: 40em;
+    border: black solid 1px;
+    display: flex;
+    padding: 7px;
+    justify-content: center;
+
+}
+
+#panel > #panel-input{
+    border: black 1px solid;
+    background-color: burlywood;
+    width: 30em;
+    height: 3em;
+    padding-left: 50px;
+}
+
+.btn{
+    height: 2em; 
+    width: 3em;
+    margin: 10px;
+
+}
+
+#input{
+    padding-left:10px ;
+}
