@@ -1,0 +1,80 @@
+
+body {
+    display: flex;
+
+    justify-content: center;
+    background-size: 100%;
+}
+
+.todolist-panel {
+    width: 20em;
+    min-height: 25em;
+    background-color: whitesmoke;
+    border: 1px solid #bbb;
+    box-shadow: 2px 2px 2px #bbb;
+    opacity: 0.5;
+    overflow: scroll;
+
+}
+
+.input-pane {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+
+.input-pane, .list-pane {
+    padding: 5px 1em;
+}
+
+.input-pane > input {
+    flex: 1 1 8em;
+}
+
+.list-pane > .todo-item {
+    display: flex;
+    margin: 0.5em 0;
+}
+
+.list-pane > .todo-item > .title {
+    flex: 1 1 8em;
+    opacity: 1;
+}
+
+.important-flag {
+    width: 3em;
+    text-align: center;
+    border: 1px solid #bbb;
+    color: #ccc;
+    font-size: 1em;
+    font-weight: 900;
+    opacity: 1;
+
+    user-select: none;
+}
+
+.important-flag.open {
+    opacity: 1;
+    color: red
+    
+}
+
+
+.input-pane  #his-btn.open {
+    background-color: palevioletred;
+    color: palevioletred
+    
+}
+
+.input-pane  #add-btn.close {
+    display: none;
+}
+
+.input-pane #iinput.open{
+    display: none;
+
+}
+.list-pane .FinishedTime-flag{
+    
+    font-size: 1px;
+}
