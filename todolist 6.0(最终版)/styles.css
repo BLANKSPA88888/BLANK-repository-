@@ -1,0 +1,135 @@
+
+body {
+    display: flex;
+
+    justify-content: center;
+    background-size: 100%;
+}
+
+.todolist-panel {
+    width: 20em;
+    min-height: 25em;
+    background-color: whitesmoke;
+    border: 1px solid #bbb;
+    box-shadow: 2px 2px 2px #bbb;
+    opacity: 0.6;
+    overflow: scroll;
+
+}
+
+.input-pane {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+
+.input-pane, .list-pane {
+    padding: 5px 1em;
+}
+
+.input-pane > input {
+    flex: 1 1 8em;
+}
+
+.list-pane > .todo-item {
+    display: flex;
+    margin: 0.5em 0;
+    
+    
+}
+
+.list-pane > .todo-item > .title {
+    flex: 1 1 8em;
+    opacity: 1;
+    
+}
+
+.list-pane > .todo-item > .title.open{
+    color: green;
+    font-weight: 700;
+}
+.important-flag {
+    width: 3em;
+    text-align: center;
+    border: 1px solid #bbb;
+    color: #ccc;
+    font-size: 1em;
+    font-weight: 900;
+    opacity: 1;
+
+    user-select: none;
+}
+
+.important-flag.open {
+    opacity: 1;
+    color: red
+    
+}
+
+
+.input-pane  #his-btn.open {
+    background-color: #582637;
+    color: #582637
+    
+}
+
+.input-pane  #add-btn.close {
+    display: none;
+}
+
+.input-pane #iinput.open{
+    display: none;
+
+}
+.list-pane .FinishedTime-flag{
+    
+    font-size: 0.5px;
+}
+#manipulator{
+    width: 10em;
+    height: 10em;
+    background-color: paleturquoise;
+    opacity: 0.8;
+    margin: 10px;
+}
+#supple{
+    width: 5em;
+    
+
+    height: 5em;
+}
+#manipulator > #heading{
+    text-align: center;
+    width: auto;
+    padding: 10px;
+    
+    height: 20%;
+    background-color:plum;
+}
+#BGChange{
+    display: flex;
+    margin: 10px;
+    margin-left: 5px;
+    
+}
+#BGChange > #mark{
+    background-color: inherit;
+    width: 25%;
+    font-size: 1px;
+    padding: 10px;
+    writing-mode: vertical-lr;
+    padding-right: 0px;
+    line-height: 25px;
+    /* vertical-align: middle; */
+    font-family: 宋体;
+}
+#choice{
+    display: flex;
+    background-color: black;
+}
+button{
+    background-color: lightsalmon;
+}
+#btn1, #btn2 , #btn3, #btn4{
+    margin:3px
+}
